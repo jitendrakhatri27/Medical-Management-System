@@ -71,6 +71,32 @@ Below is the project structure in the IDE:
 
 ![Project Structure](screenshots/project-structure.png)
 
+
+## Database
+
+Database Name: medical_shop
+
+Tables:
+* medicine_stock
+* medicines
+* purchases
+* sales
+
+## How to Run the Project
+
+1. Install Java JDK and JavaFX.
+2. Install MySQL and create a database named:
+
+   ```
+   medical_shop
+   ```
+3. Update MySQL username and password in the project file.
+4. Open the project in any IDE (IntelliJ, Eclipse, or NetBeans).
+5. Run `MedicalShopApp.java`.
+
+Note: The application automatically creates required tables and data when it runs for the first time.
+
+
 ## Purpose of Project
 
 This project was developed as part of academic learning to understand:
