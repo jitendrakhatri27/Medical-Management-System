@@ -1,0 +1,151 @@
+/* Main Styles for Pharma Retail System */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ScrollBar Styling */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #CBD5E1;
+    -fx-background-radius: 4px;
+}
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #94A3B8;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+}
+.table-view .column-header {
+    -fx-background-color: #F8FAFC;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 10 5;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #4B5563;
+    -fx-font-weight: bold;
+}
+.table-view .table-row-cell {
+    -fx-border-color: #F1F5F9;
+    -fx-border-width: 0 0 1 0;
+}
+.table-view .table-row-cell:filled:hover {
+    -fx-background-color: #F8FAFC;
+}
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #EFF6FF;
+}
+
+/* TabPane Styling */
+.tab-pane {
+    -fx-background-color: transparent;
+}
+.tab-pane .tab-header-area {
+    -fx-padding: 0;
+}
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+.tab-pane .tab {
+    -fx-background-color: #F1F5F9;
+    -fx-background-radius: 8 8 0 0;
+    -fx-padding: 12 25;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1 1 0 1;
+    -fx-border-radius: 8 8 0 0;
+}
+.tab-pane .tab:selected {
+    -fx-background-color: white;
+    -fx-border-color: #E2E8F0 #E2E8F0 white #E2E8F0;
+}
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #4B5563;
+    -fx-font-weight: bold;
+}
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #1E3A8A;
+}
+
+/* Button Styling */
+.button {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 2, 0, 0, 1);
+    -fx-transition: all 0.2s;
+}
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0, 0, 2);
+    -fx-translate-y: -1;
+}
+.button:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 2, 0, 0, 1);
+    -fx-translate-y: 0;
+}
+
+/* TextField and ComboBox Styling */
+.text-field, .password-field, .combo-box {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.02), 2, 0, 0, 1);
+}
+.text-field:focused, .password-field:focused, .combo-box:focused {
+    -fx-border-color: #3B82F6;
+    -fx-effect: dropshadow(gaussian, rgba(59,130,246,0.2), 4, 0, 0, 2);
+}
+
+/* Alert/Dialog Styling */
+.dialog-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+}
+.dialog-pane .header-panel {
+    -fx-background-color: white;
+}
+.dialog-pane .content {
+    -fx-padding: 20;
+}
+.dialog-pane .button-bar {
+    -fx-padding: 15 20 20 20;
+}
+
+/* Custom Classes */
+.floating {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 15, 0, 0, 3);
+}
+
+.transparent-menu .arrow-button {
+    -fx-padding: 0;
+}
+.transparent-menu .arrow-button .arrow {
+    -fx-padding: 0;
+}
+
+/* Status Indicators */
+.status-indicator {
+    -fx-padding: 3 8;
+    -fx-background-radius: 12;
+    -fx-font-size: 11;
+    -fx-font-weight: bold;
+}
+.status-success {
+    -fx-background-color: #D1FAE5;
+    -fx-text-fill: #065F46;
+}
+.status-warning {
+    -fx-background-color: #FEF3C7;
+    -fx-text-fill: #92400E;
+}
+.status-error {
+    -fx-background-color: #FEE2E2;
+    -fx-text-fill: #991B1B;
+}
+.status-info {
+    -fx-background-color: #DBEAFE;
+    -fx-text-fill: #1E40AF;
+}
